@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<button id="ibtn">close</button>
+		
+		<script>
+			ibtn.onclick = function(){
+				window.opener.location.reload()
+				window.close()
+			}
+		</script>
+	</body>
+</html>

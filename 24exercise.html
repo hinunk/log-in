@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>BOM</title>
+	</head>
+
+	<body>
+		<button id="btn">open a window</button>
+    	
+
+
+		<script src="bom.js"></script>
+	
+		
+		
+		<script>
+			btn.onclick = function() {
+				$.bom.openAtCenter(400,400,'iframe.html')
+			}
+		</script>
+		<script>
+			document.write(Math.random())
+		</script>
+	</body>
+
+</html>
