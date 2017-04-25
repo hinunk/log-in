@@ -8,16 +8,18 @@
 
 	<body>
 		<button id="btn">open a window</button>
-    	
-
+		<button id="btn2">get search</button>
 
 		<script src="bom.js"></script>
-	
-		
-		
+
 		<script>
 			btn.onclick = function() {
-				$.bom.openAtCenter(400,400,'iframe.html')
+				$.bom.openAtCenter(400, 400, 'iframe.html')
+			}
+		</script>
+		<script>
+			btn2.onclick = function() {
+				console.log($.bom.search('a'))
 			}
 		</script>
 		<script>
