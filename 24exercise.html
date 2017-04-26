@@ -8,13 +8,8 @@
 
 <body>
 	<button id="btn">open a window</button>
-	<button id="btn2">get search</button>
 	<button id="btn3">set search</button>
-	<script>
-		btn3.onclick = function () {
-			location.search = '?a=你好啊&b=3'
-		}
-	</script>
+
 	<script src="bom.js"></script>
 
 	<script>
@@ -23,10 +18,8 @@
 		}
 	</script>
 	<script>
-		btn2.onclick = function () {
-			console.log($.bom.search('a'))
-			console.log($.bom.search('b'))
-			console.log($.bom.search('c'))
+		btn3.onclick = function () {
+			console.log($.bom.search('hi','你好'))
 		}
 	</script>
 	<script>
