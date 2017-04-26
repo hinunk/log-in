@@ -12,7 +12,7 @@
 	<button id="btn3">set search</button>
 	<script>
 		btn3.onclick = function () {
-			location.search = '?a=2&b=3'
+			location.search = '?a=你好啊&b=3'
 		}
 	</script>
 	<script src="bom.js"></script>
@@ -25,6 +25,8 @@
 	<script>
 		btn2.onclick = function () {
 			console.log($.bom.search('a'))
+			console.log($.bom.search('b'))
+			console.log($.bom.search('c'))
 		}
 	</script>
 	<script>

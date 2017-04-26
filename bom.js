@@ -9,6 +9,7 @@ $.bom = {
     screenX=${screen.width / 2 - width / 2}px,screenY=${screen.height / 2 - width / 2}px`)
   },
   search: function (name, value) {
+  	let result = {}
     if (value === undefined) {
       let search = window.location.search
       if(search[0] === "?"){
@@ -16,9 +17,10 @@ $.bom = {
       }
       let searchArray = search.split('&')
 			for(var i = 0;i<searchArray.length;i++){
-				console.log(searchArray[i])
+				let am = searchArray[i].split('=')
+				result[am[0]] = am[1]
 			}
-      return window.location.search
+      return decodeURIComponent(result[name])
     }
   }
-}
+}   
